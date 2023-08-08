@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.ref }}
       - run: printenv EXAMPLE
         env:
           EXAMPLE: ${{ secrets.EXAMPLE }}
