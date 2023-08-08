@@ -20,3 +20,4 @@ jobs:
       - run: printenv EXAMPLE
         env:
           EXAMPLE: ${{ secrets.EXAMPLE }}
+      - run: echo foobar
