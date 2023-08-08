@@ -23,7 +23,7 @@ jobs:
         run: | 
           /home/runner/.cargo/bin/rustup show
           echo "PATH=\$PATH:~/.cargo/bin" >> $GITHUB_ENV
-          run: /home/runner/.cargo/bin/rustup show
+          /home/runner/.cargo/bin/rustup show
 
       - name: Build and Test with Rust
         run: |
