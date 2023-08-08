@@ -1,7 +1,7 @@
 name: Build with Rust 1.69.0
 
 on:
-  push:
+  pull_request:
     branches:
       - main  # Change this to your default branch name if needed
 
