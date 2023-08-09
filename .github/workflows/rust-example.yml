@@ -19,7 +19,14 @@ jobs:
         with:
           toolchain: 1.69.0
           default: true
-
+          
+       - name: Clone kata repository
+         uses: actions/checkout@v3
+         with:
+           repository: kata-containers/kata-containers
+           path: kata-containers
+           ref: CC-0.7.0
+           
       - name: Add Rust to PATH
         run: |
           /home/runner/.cargo/bin/rustup show
