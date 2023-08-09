@@ -18,10 +18,10 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: 1.69.0
+          default: true
 
       - name: Add Rust to PATH
-        run: | 
-          rustup default 1.69.0
+        run: |
           /home/runner/.cargo/bin/rustup show
 
       - name: Build and Test with Rust
