@@ -21,8 +21,7 @@ jobs:
 
       - name: Add Rust to PATH
         run: | 
-          /home/runner/.cargo/bin/rustup show
-          echo "PATH=\$PATH:~/.cargo/bin" >> $GITHUB_ENV
+          rustup default 1.69.0
           /home/runner/.cargo/bin/rustup show
 
       - name: Build and Test with Rust
